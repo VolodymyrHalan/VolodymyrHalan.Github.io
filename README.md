@@ -1,2 +1,2 @@
-# VolodymyrHalan.Github.io
+# VolodymyrHalan
 FirstProject
