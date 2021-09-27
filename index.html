@@ -8,8 +8,55 @@
         </head>
         <body background="image/bg.jpg" > 
             <table border="1" align="center" cellpadding="10">
+                <hr>
+                <h1 align="center"<> <font color="green">Реєстрація</font></h1>
+                <form action="forma.php" method="post" onsubmit="return send();">
+                <table align="center" bgcolor="#ccc">
+                    <tr>
+                        <td><font color="green">Прізвище</font>:</td>
+                        <td><input type="text" size="10" maxlength="20" name="name2"></td>
+                    </tr>
+                    <tr>
+                            <td><font color="green">Ім'я</font>:</td>
+                            <td><input type="text" size="10" maxlength="20" name="Ім'я"></td>
+                        </tr>
+
+                        <tr>
+                                <td><font color="green">E-Mal</font>:</td>
+                                <td><input type="text" size="10" maxlength="20" name="E-Mail"></td>
+                            </tr>
+                            <tr>
+                                    <td><font color="green">Пароль</font>:</td>
+                                    <td><input type="text" size="10" maxlength="20" name="password"></td>
+                                </tr>
+                </table> 
+                <p align="center">
+                    <input type="submit" value="Зареєстуватись">
+                    <input type="reset" value="Очистити">
+                </p>
+                </form>
+                <hr>
+                <script type="text/javascript">
+                function send()
+                {
+                    var valid=true;
+                    var elems=document.forms[0].elements;
+                    for (var i=0; i<document.forms[0].length; i++){
+                        if (elems[i].getAttribute('type')=='text' || elems[i].getAttribute('type')=='password' || elems[i].getAttribute('type')=='email' )
+                        {if(elems[i].value==''){
+                            elems[i].style.border='2px solid red';
+                            valid=false;
+                        }
+                        }
+                    }
+                    if(!valid){
+                        alert('Заповніть всі поля !!!');
+                        return false;
+                    }
+                }
+                </script>
             <tr>
-                <td background="image/bg-3.jpg" colspan="2" heright="150" align="right">HalanVolodymyr hspace="5"</td>
+                <td background="image/bg-3.jpg" colspan="2" heright="150" align="right">"</td>
                <tr> 
                    <td colspan="2"></td>
                    </tr>
@@ -20,7 +67,7 @@
                 <tr>
                     <td colspan="2" valign="middle" height="90"></td>
                     </tr>
-                    </table>
+                    </table> 
                 <h2>Зробити сайт з нами легко</h2></font>
 
                 <font size="5"> <p align="justify"><b>Create new website</b> - це не тільки прерогатива великого бізнесу. Інтернет відкриває широкі можливості в першу чергу для малого бізнесу, для приватної підприємницької ініціативи. Адже, при започаткуванні власної справи розробка сайту потребує зовсім невеликих інвестицій, у порівнянні з іншими видами витрат. Створити сайт, в більшості випадків - це значно дешевше, наприклад, ніж оренда офісу, чи витрати на зарплату працівників.</p>
